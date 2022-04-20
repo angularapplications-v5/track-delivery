@@ -1,0 +1,11 @@
+<div class="container">
+  <ng-select [items]="data"
+           bindLabel="address"
+           bindValue="id"
+           (search)='onSearch($event)'
+           (change)='onChange($event)'
+           [(ngModel)]="selectedAddress">
+</ng-select>
+  <button (click)='onSave()' class="save btn btn-primary">Save</button>
+  <div *ngIf='saved' class="alert alert-success">Saved!!</div>
+</div>

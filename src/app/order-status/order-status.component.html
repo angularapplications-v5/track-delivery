@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="title">Track order</div>
+  <app-map [points]='points' [currentPoint]='currentPoint' [currentIndex]='currentIndex' [start]='start' [vehicle]='vehicle'></app-map>
+  <app-vehicle (changed)='onChange($event)'></app-vehicle>
+  <app-status [points]='points' [currentIndex]='currentIndex'></app-status>
+
+
+  <!-- <div class="status">
+    <div class="title">Track order</div>
+    <div class="curior">
+      <div class="curior-label">Curior</div>
+      <div class="curior-title">
+        <div class="name">Mikael Johan</div>
+        <div class="call">Call</div>
+      </div>
+    </div>
+  </div> -->
+</div>
